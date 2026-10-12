@@ -1,0 +1,174 @@
+
+
+                HTML: Hyper Text Markup language
+        --------------------------------------------------
+
+1. Used to display contents in Browser
+2. HTMl Document Structure
+
+              <html>
+                <head>
+                    meta tags :  used to provide additional informations eg: title
+                </head>
+                <body>
+                    contents should be displayed.
+                </body>
+              </html>
+  
+3. HTML Elements:
+    - Tags - <head>
+        - <tagname> content </tagname>
+        - self closing tag: <tagname/>
+4. HTML Attributes:  contents along with starting tag, attribute_name="value" , attribute_name
+5. Basic tags :
+    - Heading - h1-h6 tags
+    - Paragraph : p tag
+    - Text Formating tags: b tag,em tag, i tag, mark tag, sub tag, sup tag
+    - Links : a tag
+    - List : 
+        - Ordered List - ol, li tags
+        - Unordered List - ul, li tag
+        - Descriptive List - dl , dt,dd, tag
+    - Table : table , thead,tbody,  tr, th/td tags.. 
+    - Image : img tag, attributes- src, alt
+    - video - video , attributes- controls, autoplay
+    - Container Tags : div, article, main, section etc.....
+    - Embed data from other sources: iframe
+    - Horizontal Line : hr tag
+    - Form Elements : input tag, form tag, button, select, label...
+6. Icons : Fontawesome
+7. Semantic tags : Both the System and Developer knows about the purpose of tag.
+    - header,footer,nav, main, article, section, aside, figure etc.....
+8. Classify HTML elements based on Display Value in Browser.
+    - Block Level Elements: Occupy the full width available and always start on a new line.
+    - Inline Elements : Do not start on a new line and only take as much as width as needed
+    - Inline-Block Elements: Behave like Inline elements but allow setting width and height
+
+                  CSS : Cascading Style Sheet
+        --------------------------------------------------
+1. CSS used to style (change color, ad spaces, layout create, responsive pages) HTML Elements
+2. CSS syntax:
+            selector {
+                property : value ;
+            }
+3. Way to apply CSS to HTML Elements    
+    - Inline CSS : inside HTML tag using "style" attribute, Syntax: style ="property:value"
+    - Internal CSS : using Style Tag
+    - External CSS : Using seperate css file
+4. Selectors in CSS :  used to select HTML elements in CSS
+    - Element Selector : Using Tag Name :
+    - using ID : # symbol
+    - using Class : . symbol
+    - using Universal selector : used to select all elements from a HTML page..  (within Body tag), *  symbol
+    - Grouping Selectors : Using Commas to seperate Selectors
+    - CSS Combinators :  to select tag using combination of selectors, used to define relation(parent, child...) between selector.
+        - Combinators     meaning
+           space          Descendant Selector (all child)
+             >            Child Selector (direct child style)
+             +             Immediate Sibling selector
+             ~            Sibling selector
+5. Box Model :  Content displayed in browser inside a box. Box has a border, padding and margin
+                - padding : space between content and border
+                - margin : space outside border.
+6. Display in css :
+        - Block - Full width element
+        - Inline - Content width only
+        - Inline-Block - inline + height/width support
+        - none : hode elements
+        - flex  : Flexible layout ( Rows/columns)
+                - Container/Parent Element (used to contain items displayed as flex) 
+                - Flex items: items that should be given the flex property
+                - Properties :
+                    - justfy-content : allign items horizontally.
+                    - Direction: flex-Direction
+                    - Allign items vertically : align-items
+                    - Spacing: gap
+                    - Wrap: flex-wrap
+        - Grid:  used to layout item in 2 dimentional(rows and columns)
+            - Container / parent element : dispay set to Grid
+            - Items: 
+            - Grid Properties :
+                - Define column : grid-template-columns, flexible colum us fr(fraction of available spaces) unit
+                - Define Rows : grid-template-rows
+                - Space between rows and columns : GAP
+                - Align items horizontally : justify-items
+                - allign items vertically : allign-items
+7.Position
+    - static
+    - fixed
+    - absolute
+    - relative
+    - sticky
+8. z-index : used to control overlappping of elements
+9. Responsive Websites :  use @media keyword
+    - Media queries : can access page width, height and orientation
+    - It can be divided width to classsify different media
+        - below 425px - mobile
+        - 426px- 768px - Tablet
+        - 769 - 1024px - Laptop
+        - 1025 - 1440px : Desktop
+    - Syntax: @media (condition) {
+                selector {
+                    property: value;
+                }
+                }
+10. Color and Units 
+    - Units : px (pixel), % (relative), vh/vw ( viewport size), em/rem ( scalable)
+    - Color : name, hexadecimal value, rgb method
+11. Box Shadow : The CSS box-shadow property adds shadow effects around an element's frame. Syntax: box-shadow: offset-x offset-y blur-radius spread-radius color
+12. Pseudo class : A pseudo class in CSS is used to define a special state of an HTML element without adding extra classes to the markup.
+    - Syntax:
+        selector:pseudo-class{
+            property :value
+        }
+    - pseudo-class : hover, active, focus, visited, checked.......
+13. keyframes : define animations.
+
+     GIT & GITHUB
+ --------------------------------------------------
+ 1. GIT : Is a distributed version control system used to track changes in code and collaberate software projects.
+ 2. GIT important Conmmands :
+    - git init : Create new repository
+    - git status : show current changes of a repository
+    - git add . : used to add all changes to git. (Track the files)
+    - git commit -m "message" : save changes
+    - git push : upload changes
+    - git pull : download changes
+    - git clone <url> : copy a repository
+
+     BOOTSTRAP
+-------------------------
+
+1. It is a CSS framework used for styling html elements using predefined classes
+2. Common Styling classes:
+    - container / container-fluid - Apply for Container tags
+    - Margin : m/mt/mb/ms/me-1/2/3/4/5
+    - Padding : p/pt/pb/ps/pe-1/2/3/4/5
+    - color: danger,success,warning,dark,light,secondary,info, primary
+    - border: border rounded shadow border-color
+    - background color : bg-color
+    - text-align : text-center/start/end
+    - image : img-fluid, img-thumbnail
+    - width : w-50/75.....
+    - Button: btn btn-color
+    - flex : d-flex, flex-column, justify-content-center, align-items-center, gap-0/1/2/3/4/5
+    - font Size - fs-5/4/3/2/1
+    - Font weight - fw
+    - Grid : row, col, col-6(used divide row equal 2 parts)
+3. Responsive classes : xs, sm,md,lg,xl,xxl classes
+
+
+   TAILWIND CSS
+-------------------------
+1. Is a CSS framework for building websites without ever leaving your HTML.
+2. Add tailwind css to webpage : Add the playCDN script to your HTML
+3. Common classes :
+    - Color : bg-yellow-100/900, text-black/white
+    - Margin/padding :
+    - Fontsize: text-sm/md/lg/xl
+    - bold: font-bold
+    - FlexBox : flex, flex-col, justfy-center, items-center, gap-
+    - GRID : grid, grid-cols-number
+    - Width & Height : w-full, w-1/2,h-screen
+    - Hover : hover:style-classname 
+    Responsive classes : sm/md/lg/xl/2xl, responsive-class-name : style-class-name
